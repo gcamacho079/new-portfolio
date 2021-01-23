@@ -1,0 +1,17 @@
+$color-primary: orange;
+$header-font: 'Space Mono', monospace;
+$body-font: 'Neuton', serif;
+
+body {
+  background-color: $color-primary;
+  color: blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $header-font;
+  //font-family: $body-font;
+}
