@@ -1,11 +1,6 @@
 import React from 'React';
-import Logo from '../assets/logo.png';
+import Header from '../components/Header';
 
 export default function Home() {
-  return (
-    <header>
-      <img src={Logo} alt="" />
-      <h1>Lupe Camacho</h1>
-    </header>
-  );
+  return <Header />;
 }
