@@ -8,18 +8,16 @@ const Experience = () => {
         Experience <Emoji symbol="💻" />
       </h2>
       <p>
-        I've been with my current agency WLCR for going on 3 years, focusing
-        primarily on custom Shopify theme development (with some custom
-        WordPress dev sprinkled in <Emoji symbol="🧁" />
+        In my current role, I focus primarily on custom Shopify theme
+        development (with some custom WordPress dev sprinkled in{' '}
+        <Emoji symbol="🧁" />
         ). My role includes:
       </p>
       <ul>
         <li>
           Building bespoke themes and experiences on the Shopify platform.
-          <br />A recent highlight was <strong>
-            serving as the lead dev
-          </strong>{' '}
-          on the new Kit Undergarments theme build, and developing this{' '}
+          <br />A recent highlight was serving as the lead dev on the new Kit
+          Undergarments theme build, and developing this{' '}
           <a
             href="https://www.kitundergarments.com/collections/bras?fit-finder=true"
             target="_blank"
@@ -35,8 +33,8 @@ const Experience = () => {
         </li>
         <li>
           Brainstorming and recommending solutions to meet client needs — both
-          custom-built and from the app ecosystem — while{' '}
-          <strong>solving for potential incompatibilities</strong>
+          custom-built and from the app ecosystem — while solving for potential
+          incompatibilities
         </li>
       </ul>
     </section>

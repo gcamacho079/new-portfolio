@@ -8,7 +8,7 @@ const Projects = () => {
       <h2>
         Projects <Emoji symbol="📂" />
       </h2>
-      <p>Some projects I've built, new and old.</p>
+      <p>Here are some things I've built for fun!</p>
       <ul className="grid list--unstyled">
         {myProjects.map((project, index) => {
           return (
