@@ -1,0 +1,15 @@
+body {
+  margin: 0 $spacer;
+  padding: 0 $spacer;
+  font-family: 'IBM Plex Sans';
+  background-color: $color-background;
+  line-height: 1.5;
+
+  a {
+    color: $black;
+  }
+}
+
+section {
+  margin: rem(45) 0;
+}
