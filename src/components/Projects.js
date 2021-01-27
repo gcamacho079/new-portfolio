@@ -18,8 +18,12 @@ const Projects = () => {
 
               <div className="project__tags">
                 {project.tags
-                  ? project.tags.map((tag) => {
-                      return <span className="project__tag">{tag}</span>;
+                  ? project.tags.map((tag, index) => {
+                      return (
+                        <span key={index} className="project__tag">
+                          {tag}
+                        </span>
+                      );
                     })
                   : null}
               </div>
