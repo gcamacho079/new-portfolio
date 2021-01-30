@@ -5,7 +5,13 @@ const Header = () => {
   return (
     <header className="header">
       <h1>
-        <img src={Logo} alt="Lupe Camacho" />
+        <img
+          src={Logo}
+          alt="Lupe Camacho"
+          width="200"
+          height="140"
+          title="Lupe Camacho"
+        />
       </h1>
     </header>
   );

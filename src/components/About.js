@@ -15,9 +15,14 @@ const About = () => {
         .
       </p>
       <p>
-        I'm a certified Web Accessibitily Specialist with the IAAP, and I'm
+        I'm a certified Web Accessibility Specialist with the IAAP, and I'm
         excited about using tech to build things that are useful, user-friendly,
         and inclusive.
+      </p>
+      <p>
+        Skills include: JavaScript (ES6), PHP, Ruby, semantic HTML, CSS,
+        functional programming, webpack, accessibility testing, React, and more.{' '}
+        <Emoji symbol="📚" />
       </p>
     </section>
   );

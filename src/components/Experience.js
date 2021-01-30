@@ -15,9 +15,9 @@ const Experience = () => {
       </p>
       <ul>
         <li>
-          Building bespoke themes and experiences on the Shopify platform.
-          <br />A recent highlight was serving as the lead dev on the new Kit
-          Undergarments theme build, and developing this{' '}
+          Building custom, responsive themes on the Shopify platform. A recent
+          highlight was serving as the lead dev on the new Kit Undergarments
+          theme build, and developing this{' '}
           <a
             href="https://www.kitundergarments.com/collections/bras?fit-finder=true"
             target="_blank"
@@ -27,14 +27,14 @@ const Experience = () => {
           </a>
         </li>
         <li>
+          Collaborating on and contributing to custom codebases and
+          documentation; this includes work on build processes, starter themes,
+          testing suites, team knowledgebases, etc.
+        </li>
+        <li>
           Leading initiatives to move accessibility further to the left by
           holding short talks on a11y topics, providing feedback on proposed
           designs, and educating clients.
-        </li>
-        <li>
-          Brainstorming and recommending solutions to meet client needs — both
-          custom-built and from the app ecosystem — while solving for potential
-          incompatibilities
         </li>
       </ul>
     </section>

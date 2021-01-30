@@ -16,6 +16,11 @@ const Footer = () => {
           </li>
         </ul>
       </nav>
+      <p>
+        <a href="https://github.com/gcamacho079/new-portfolio">
+          View my portfolio repo on GitHub
+        </a>
+      </p>
     </footer>
   );
 };

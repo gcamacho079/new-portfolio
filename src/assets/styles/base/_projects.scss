@@ -32,7 +32,6 @@
 
   a {
     display: block;
-    font-size: rem(15);
     margin-top: 10px;
   }
 
@@ -46,10 +45,11 @@
 }
 
 .project__tag {
+  display: inline-block;
   background-color: $purple;
   color: $white;
   padding: rem(3) rem(8);
-  margin: 0 rem(2.5);
+  margin: rem(2.5);
   border-radius: rem(3);
-  font-size: rem(14);
+  font-size: rem(18);
 }
