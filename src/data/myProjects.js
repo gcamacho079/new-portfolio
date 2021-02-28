@@ -3,7 +3,7 @@ const myProjects = [
     name: 'Pomodoro',
     description: 'A happy little Pomodoro timer.',
     url_github: 'https://github.com/gcamacho079/pomodoro',
-    url_live: 'https://gcamacho079.github.io/pomodoro/',
+    url_live: 'https://pomodoro-d279a.web.app/',
     tags: ['React', 'ES6', 'styled components'],
   },
   {
