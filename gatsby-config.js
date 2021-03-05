@@ -8,26 +8,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-prismic',
       options: {
-        // The name of your prismic.io repository. This is required.
-        // Example: 'gatsby-source-prismic-test-site' if your prismic.io address
-        // is 'gatsby-source-prismic-test-site.prismic.io'.
-        repositoryName: 'gatsby-source-prismic-test-site',
-
-        // An API access token to your prismic.io repository. This is optional.
-        // You can generate an access token in the "API & Security" section of
-        // your repository settings. Setting a "Callback URL" is not necessary.
-        // The token will be listed under "Permanent access tokens".
-        accessToken:
-          'example-wou7evoh0eexuf6chooz2jai2qui9pae4tieph1sei4deiboj',
-
-        // If you provide a release ID, the plugin will fetch data from Prismic
-        // for a specific release. A Prismic release is a way to gather a
-        // collection of changes for a future version of your website. Note that
-        // if you add changes to a release, you'll need to rebuild your website
-        // to see them.
-        // See: https://user-guides.prismic.io/en/collections/22653-releases-scheduling#the-basics-of-a-release
-        releaseID: 'example-eiyaingiefahyi7z',
-
+        repositoryName: 'headless-lupe',
         // Set a link resolver function used to process links in your content.
         // Fields with rich text formatting or links to internal content use this
         // function to generate the correct link URL.
@@ -36,7 +17,10 @@ module.exports = {
         // different link resolver logic for each field if necessary.
         // See: https://prismic.io/docs/javascript/query-the-api/link-resolving
         linkResolver: ({ node, key, value }) => (doc) => {
-          // Your link resolver
+          // TODO: add additional doc types (minus homepage)
+          if (doc.type === 'post') return `/post/${doc.uid}`;
+
+          return `/doc/${doc.uid}`;
         },
 
         // Set a list of links to fetch and be made available in your link
@@ -61,11 +45,8 @@ module.exports = {
         ) => {
           // Your HTML serializer
         },
-
-        // Provide an object of Prismic custom type JSON schemas to load into
-        // Gatsby. This is required.
         schemas: {
-          // Your custom types mapped to schemas
+          post: require('./src/schemas/post.json'),
         },
 
         // Set a default language when fetching documents. The default value is
