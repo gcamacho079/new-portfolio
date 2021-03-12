@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Lupe Camacho`,
+    title: 'Lupe Camacho',
+    siteUrl: 'https://lupecamacho.com',
+    description: 'My page on the Internet',
   },
   plugins: [
     `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-source-prismic',
       options: {
