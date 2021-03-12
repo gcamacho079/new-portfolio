@@ -1,6 +1,4 @@
 import React from 'react';
-//import Helmet from 'react-helmet';
-import Layout from '../components/Layout';
 import truncateText from '../utils/truncateText';
 import { graphql, Link } from 'gatsby';
 
@@ -19,15 +17,10 @@ const SinglePostItem = ({ post }) => {
 
 export default function Blog({ data }) {
   const allPosts = data.allPrismicPost.nodes;
-  console.log(allPosts);
   const allPostItems = allPosts.map((post, index) => (
     <SinglePostItem key={index} post={post} />
   ));
-  return (
-    <Layout>
-      <>{allPostItems}</>
-    </Layout>
-  );
+  return <>{allPostItems}</>;
 }
 
 export const query = graphql`
@@ -41,7 +34,6 @@ export const query = graphql`
           date(formatString: "")
           body {
             ... on PrismicPostBodyText {
-              id
               primary {
                 text {
                   text
