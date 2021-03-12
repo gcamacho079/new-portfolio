@@ -4,19 +4,26 @@ import Layout from '../components/Layout';
 import truncateText from '../utils/truncateText';
 import { graphql } from 'gatsby';
 
+const SinglePostItem = ({ post }) => {
+  const { data } = post;
+  return (
+    <article>
+      <h2>{data.title.text}</h2>
+      <p>{data.date}</p>
+      <p>{truncateText(data.body[0].primary.text.text)}</p>
+    </article>
+  );
+};
+
 export default function Blog({ data }) {
   const allPosts = data.allPrismicPost.nodes;
   console.log(allPosts);
   const allPostItems = allPosts.map((post, index) => (
-    <li key={index}>
-      <h2>{post.data.title.text}</h2>
-      <p>{post.data.date}</p>
-      <p>{truncateText(post.data.body[0].primary.text.text)}</p>
-    </li>
+    <SinglePostItem key={index} post={post} />
   ));
   return (
     <Layout>
-      <ul>{allPostItems}</ul>
+      <>{allPostItems}</>
     </Layout>
   );
 }
