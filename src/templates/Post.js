@@ -1,19 +1,14 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import SliceZone from '../components/SlizeZone';
 
 const SinglePostPage = ({ data }) => {
-  const { post } = data;
+  if (!data) return;
+  const document = data.post.data;
   return (
     <article>
-      <h1>{post.data.title.text}</h1>
-      {post.data.body.map((block) => {
-        if (block['__typename'] === 'PrismicPostBodyText') {
-          return (
-            <div
-              dangerouslySetInnerHTML={{ __html: block.primary.text.html }}
-            ></div>
-          );
-        }
-      })}
+      <h1>{document.title.text}</h1>
+      <SliceZone slices={document.body} />
     </article>
   );
 };
@@ -33,6 +28,7 @@ export const query = graphql`
                 html
               }
             }
+            slice_type
           }
           ... on PrismicPostBodyQuote {
             id
@@ -41,6 +37,7 @@ export const query = graphql`
                 html
               }
             }
+            slice_type
           }
           ... on PrismicPostBodyText {
             id
@@ -49,6 +46,7 @@ export const query = graphql`
                 html
               }
             }
+            slice_type
           }
           ... on PrismicPostBodyImage {
             id
@@ -57,6 +55,7 @@ export const query = graphql`
                 alt
               }
             }
+            slice_type
           }
         }
       }

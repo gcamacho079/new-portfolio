@@ -25,13 +25,13 @@ export default function Blog({ data }) {
 
 export const query = graphql`
   query PostQuery {
-    allPrismicPost {
+    allPrismicPost(sort: { fields: last_publication_date, order: ASC }) {
       nodes {
         data {
           title {
             text
           }
-          date(formatString: "")
+          date(formatString: "MMMM DD, YYYY")
           body {
             ... on PrismicPostBodyText {
               primary {
