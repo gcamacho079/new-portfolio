@@ -21,3 +21,13 @@ export const Image = ({ slice }) => {
 
   return <img src={slice.primary.image.url} alt={slice.primary.image.alt} />;
 };
+
+export const Quote = ({ slice }) => {
+  if (!slice) return;
+
+  return (
+    <blockquote
+      dangerouslySetInnerHTML={{ __html: slice.primary.quote.html }}
+    ></blockquote>
+  );
+};

@@ -1,11 +1,12 @@
 import React from 'react';
-import { RichText, CodeBlock, Image } from './slices';
+import { RichText, CodeBlock, Image, Quote } from './slices';
 
 const SliceZone = ({ slices }) => {
   const sliceComponents = {
     text: RichText,
     code_block: CodeBlock,
     image: Image,
+    quote: Quote,
   };
 
   return slices.map((slice, index) => {
