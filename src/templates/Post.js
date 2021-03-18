@@ -53,6 +53,7 @@ export const query = graphql`
             primary {
               image {
                 alt
+                url
               }
             }
             slice_type

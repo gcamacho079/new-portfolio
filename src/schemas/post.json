@@ -45,19 +45,8 @@
                 "type": "StructuredText",
                 "config": {
                   "multi": "preformatted",
-                  "label": "code-block",
-                  "placeholder": "Paste your code here with a label",
-                  "labels": [
-                    "javascript",
-                    "css",
-                    "scss",
-                    "jsx",
-                    "bash",
-                    "json",
-                    "diff",
-                    "markdown",
-                    "graphql"
-                  ]
+                  "label": "code_block",
+                  "placeholder": "Paste your code here with a label"
                 }
               }
             },
