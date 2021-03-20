@@ -4,16 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gatsby develop"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^4.1.0",
     "gatsby": "^2.31.1",
     "gatsby-plugin-react-helmet": "^3.9.0",
     "gatsby-plugin-sass": "^3.1.0",
+    "gatsby-source-prismic": "^3.3.4",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
