@@ -25,7 +25,7 @@ export default function Blog({ data }) {
 
 export const query = graphql`
   query PostQuery {
-    allPrismicPost(sort: { fields: last_publication_date, order: ASC }) {
+    allPrismicPost(sort: { fields: first_publication_date, order: DESC }) {
       nodes {
         data {
           title {

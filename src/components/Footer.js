@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const Footer = () => {
   return (
@@ -13,6 +14,9 @@ const Footer = () => {
           </li>
           <li>
             <a href="mailto:hello@lupecamacho.com">Email Me</a>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
           </li>
         </ul>
       </nav>
