@@ -7,12 +7,6 @@ const myProjects = [
     tags: ['React', 'ES6', 'styled components'],
   },
   {
-    name: 'Random Quote Generator',
-    description: 'Random programming quotes for your Tweeting pleasure.',
-    url_github: 'https://github.com/gcamacho079/random-quote-generator',
-    url_live: 'https://gcamacho079.github.io/random-quote-generator/',
-  },
-  {
     name: 'Faux Google',
     description: 'Fool all your friends!',
     url_github: 'https://github.com/gcamacho079/google-homepage',
