@@ -1,15 +1,19 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import SliceZone from '../components/SlizeZone';
+import SEO from '../components/SEO';
 
 const SinglePostPage = ({ data }) => {
   if (!data) return;
   const document = data.post.data;
   return (
-    <article>
-      <h1>{document.title.text}</h1>
-      <SliceZone slices={document.body} />
-    </article>
+    <>
+      <SEO title={document.title.text} />
+      <article>
+        <h1>{document.title.text}</h1>
+        <SliceZone slices={document.body} />
+      </article>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import truncateText from '../utils/truncateText';
 import { graphql, Link } from 'gatsby';
+import SEO from '../components/SEO';
 
 const SinglePostItem = ({ post }) => {
   const { data, uid } = post;
@@ -20,7 +21,12 @@ export default function Blog({ data }) {
   const allPostItems = allPosts.map((post, index) => (
     <SinglePostItem key={index} post={post} />
   ));
-  return <>{allPostItems}</>;
+  return (
+    <>
+      <SEO title="Blog" />
+      {allPostItems}
+    </>
+  );
 }
 
 export const query = graphql`

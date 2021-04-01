@@ -5,6 +5,7 @@ module.exports = {
     description: 'My page on the Internet',
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-source-prismic',
