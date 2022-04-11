@@ -8,9 +8,9 @@ const About = () => {
         About <Emoji symbol="📖" />
       </h2>
       <p>
-        Hi! My name's Lupe Camacho and I'm a front end web developer at{' '}
-        <a href="https://wlcr.io/" target="_blank" rel="noreferrer">
-          WLCR
+        Hi! My name's Lupe Camacho and I'm an Accessibility Engineer at{' '}
+        <a href="https://pixelandtonic.com/" target="_blank" rel="noreferrer">
+          Pixel &#38; Tonic
         </a>
         .
       </p>
